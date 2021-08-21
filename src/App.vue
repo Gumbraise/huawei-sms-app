@@ -1,15 +1,15 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <message-list/>
+  <messages/>
 </template>
 
 <script>
-import messageList from "./components/messages-card/messageList";
+import messages from "./components/messages";
 
 export default {
   name: 'App',
   components: {
-    messageList
-  }
+    messages,
+  },
 }
 </script>
