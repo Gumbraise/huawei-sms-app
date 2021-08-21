@@ -1,5 +1,9 @@
 <template>
-  <message-card/>
+  <message-card
+      v-for:="(message, i) in xml"
+      :v-key="i"
+      :message="message"
+      />
 </template>
 
 <script>
@@ -9,6 +13,12 @@ export default {
   name: "messageList",
   components: {
     messageCard,
+  },
+  props: {
+    xml: {
+      type: Array,
+      required: true
+    }
   }
 }
 </script>
