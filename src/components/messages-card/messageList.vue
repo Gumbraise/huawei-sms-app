@@ -1,9 +1,12 @@
 <template>
-  <message-card
-      v-for:="(message, i) in xml"
-      :v-key="i"
-      :message="message"
-      />
+  <div class="space-y-4">
+    <message-card
+
+        v-for:="(message, i) in xml"
+        :v-key="i"
+        :message="message"
+    />
+  </div>
 </template>
 
 <script>
