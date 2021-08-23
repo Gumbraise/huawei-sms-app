@@ -18,7 +18,10 @@
 export default {
   name: "messageCard",
   props: {
-    message: Object,
+    message: {
+      type: Object,
+      required: true,
+    }
   }
 }
 </script>
